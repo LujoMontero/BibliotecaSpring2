@@ -23,7 +23,7 @@ public class BibliotecaControl {
     @GetMapping
     public String getAllPatients(Model model) {
         List<Biblioteca> bibliotecas = iBibliotecaService.getAllBibliotecas();
-        model.addAttribute("bibliotecas", bibliotecas);
+        model.addAttribute("libros", bibliotecas);
         return "bibliotecaii";
     }
 }
